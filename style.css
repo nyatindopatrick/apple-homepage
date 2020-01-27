@@ -32,10 +32,7 @@ nav li {
 }
 
 nav a {
-  padding-left: 2rem;
-  padding-right: 2.6rem;
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
+  padding: 0.9rem 2.6rem 0.9rem 2rem;
   text-decoration: none;
   color: white;
   border-right: 0.4px solid rgba(65, 64, 64, 0.966);
