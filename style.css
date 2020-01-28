@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Verdana,
+    sans-serif;
 }
 
 nav {
@@ -14,24 +21,34 @@ nav {
   align-items: center;
   position: absolute;
   top: 12%;
-  left: 15%;
+  left: 16%;
 }
-nav ul {
-  background: linear-gradient(180deg, gray, rgb(75, 75, 75), gray);
+
+.nav ul {
+  background:
+    linear-gradient(
+      180deg,
+      #808080,
+      #666,
+      gray,
+      #5e5e5e,
+      #707070,
+      #808080
+    );
   padding: 0.6rem;
   border-radius: 7px;
-  width: 1100px;
+  width: 1030px;
   position: absolute;
   left: 17%;
   right: 5%;
 }
 
-nav li {
+.nav li {
   list-style: none;
   display: inline-block;
 }
 
-nav a {
+.nav a {
   padding-left: 2rem;
   padding-right: 2.6rem;
   padding-top: 0.9rem;
@@ -41,20 +58,9 @@ nav a {
   border-right: 0.4px solid rgba(65, 64, 64, 0.966);
   margin-left: -0.5rem;
 }
-nav a:hover {
-  background: linear-gradient(
-    180deg,
-    rgb(39, 39, 39),
-    rgb(75, 75, 75),
-    rgb(31, 31, 31)
-  );
-}
-nav a:nth-child(1):hover {
-  border-radius: 7px;
-}
-nav li:nth-child(8) {
-  display: inline-block;
-  text-align: center;
+
+.option-one:hover {
+  border-radius: 7px 0 0 7px;
 }
 
 nav input {
@@ -62,12 +68,18 @@ nav input {
   padding: 6px;
   border: 0.5px solid black;
   border-radius: 20px;
-  align-content: center;
   margin-left: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;
+  transition: 0.8s;
+  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  justify-items: center;
 }
 
 nav input:focus {
   outline: none;
+  background: white;
+  width: 90%;
 }
 
 .fa-apple {
@@ -90,11 +102,28 @@ nav input:focus {
   display: block;
   text-align: center;
 }
-.first-article h1,
+
+.first-article h1 {
+  position: relative;
+  top: 40%;
+  font-weight: lighter;
+  color: white;
+  font-size: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
 .first-article h4,
 .first-article h5 {
   position: relative;
   top: 40%;
+  color: white;
+}
+
+.first-article i {
+  position: absolute;
+  top: 45%;
+  font-size: 80px;
+  font-weight: 100;
   color: white;
 }
 
@@ -103,13 +132,16 @@ nav input:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3px;
 }
+
 .product-list img {
   width: 100%;
 }
+
 footer {
   padding: 2rem;
   font-size: 12px;
 }
+
 .footer-one {
   display: flex;
   padding-bottom: 1rem;
@@ -122,12 +154,25 @@ footer {
   position: absolute;
   right: 1rem;
 }
-.footer-one li {
+
+.footer-one > li {
   padding: 8px;
 }
+
 .footer-one img {
   width: 1.2rem;
 }
-footer a {
+
+.footer a {
   color: #46b7f1;
+}
+
+.nav a:hover {
+  background:
+    linear-gradient(
+      180deg,
+      rgb(39, 39, 39),
+      rgb(75, 75, 75),
+      rgb(31, 31, 31)
+    );
 }
