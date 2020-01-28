@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -92,7 +93,7 @@ nav input:focus {
   background-size: cover;
   display: grid;
   grid-template-rows: 3fr 1fr;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -155,7 +156,7 @@ footer {
   right: 1rem;
 }
 
-.footer-one > li {
+.footer-list > li {
   padding: 8px;
 }
 
